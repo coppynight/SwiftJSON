@@ -56,8 +56,10 @@ public class JSONModel: NSObject {
         let mapper = self.dynamicType.keyMapper()
         for p in properties {
             let name = mapper.map(p.name, isJSONToModel: true)
+            var converted = false
             if JSONModel.isSupported(p.value.dynamicType) {
                 self.setValue(dict[name], forKey: p.name)
+                converted = true
             } else if let modelDict = dict[name] as? JSONDict {
                 var clsName = self.dynamicType.propertyClassName(p.name)
                 if clsName.isEmpty {
@@ -69,11 +71,14 @@ public class JSONModel: NSObject {
                     if let modelType = cls as? JSONModel.Type {
                         if let model = modelType.init(dict: modelDict) {
                             self.setValue(model, forKey: p.name)
+                            converted = true
                         }
                     }
                 }
-            } else {
-                print("SKIP", p.name, p.value.dynamicType)
+            }
+            
+            if !converted {
+                print("[WARN] please unmarshal property ", p.name, "[", p.value.dynamicType, "] manually", separator:"", terminator:"\n")
             }
         }
     }
@@ -89,7 +94,7 @@ public class JSONModel: NSObject {
             } else if let model = p.value as? JSONModel {
                 dict[name] = model.toDict()
             } else {
-                print("SKIP", p.name, p.value.dynamicType)
+                print("[WARN] please marshal property ", p.name, "[", p.value.dynamicType, "] manually", separator:"", terminator:"\n")
             }
         }
         return dict
