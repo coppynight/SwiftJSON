@@ -18,9 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        var student:Student? = JSONModel.unmarshal("{\"name\":\"Tom\", \"score\":95, \"teacher\":{\"name\":\"Mr Li\", \"gender\":1, \"age\":36, \"classes\":[\"English\", \"Chinese\"]}}")
+        let student:Student? = JSONUnmarshal("{\"name\":\"Tom\", \"score\":95, \"teacher\":{\"name\":\"Mr Li\", \"gender\":1, \"age\":36, \"classes\":[\"English\", \"Chinese\"]}}")
         
-        if let data = JSONModel.marshal(student!) {
+        if let data = JSONMarshal(student!) {
             print(String(data: data, encoding: NSUTF8StringEncoding)!)
         }
         return true

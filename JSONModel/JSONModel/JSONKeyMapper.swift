@@ -51,8 +51,8 @@ public class JSONKeyMapper {
             in
             var result = ""
             var converting = false
-            for c in key.unicodeScalars {
-                if c.isDigit() || c.isUpperCase() {
+            for x in key.unicodeScalars {
+                if x.isDigit() || x.isUpperCase() {
                     if !converting {
                         converting = true
                         if !result.isEmpty {
@@ -63,7 +63,7 @@ public class JSONKeyMapper {
                     converting = false
                 }
                 
-                result.append(c.lowerCase())
+                result.append(x.lowerCase())
             }
             
             return result
@@ -74,14 +74,14 @@ public class JSONKeyMapper {
             in
             var result = ""
             var converting = false
-            for c in key.unicodeScalars {
-                if c.value == 95 {
+            for x in key.unicodeScalars {
+                if x.value == 95 { //95 is ASCII value of '_'
                     converting = true
                 } else {
-                    if converting && c.isLowerCase() {
-                        result.append(c.upperCase())
+                    if converting && x.isLowerCase() {
+                        result.append(x.upperCase())
                     } else {
-                        result.append(c)
+                        result.append(x)
                     }
                     converting = false
                 }
