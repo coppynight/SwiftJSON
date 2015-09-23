@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:JSONModel.xcodeproj">
+      location = "self:SwiftJSON.xcodeproj">
    </FileRef>
 </Workspace>

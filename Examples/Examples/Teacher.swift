@@ -8,7 +8,7 @@
 
 import Foundation
 
-import JSONModel
+import SwiftJSON
 
 class Teacher: JSONModel {
     var name: String?

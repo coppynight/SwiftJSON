@@ -25,19 +25,19 @@
 			remoteGlobalIDString = 7B11CB281BAE906200E15E74;
 			remoteInfo = Examples;
 		};
-		7B11CB521BAE912100E15E74 /* PBXContainerItemProxy */ = {
+		7BB94FE91BB2A9850054C439 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7B11CB4E1BAE912100E15E74 /* JSONModel.xcodeproj */;
+			containerPortal = 7BB94FE51BB2A9840054C439 /* SwiftJSON.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 7BC8933A1BAD33600071F281;
-			remoteInfo = JSONModel;
+			remoteGlobalIDString = 7BF05A7A1BAF9949005E1535;
+			remoteInfo = SwiftJSON;
 		};
-		7B11CB541BAE912A00E15E74 /* PBXContainerItemProxy */ = {
+		7BB94FEB1BB2A9980054C439 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7B11CB4E1BAE912100E15E74 /* JSONModel.xcodeproj */;
+			containerPortal = 7BB94FE51BB2A9840054C439 /* SwiftJSON.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 7BC893391BAD33600071F281;
-			remoteInfo = JSONModel;
+			remoteGlobalIDString = 7BF05A791BAF9949005E1535;
+			remoteInfo = SwiftJSON;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -53,8 +53,8 @@
 		7B11CB411BAE906200E15E74 /* ExamplesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplesUITests.swift; sourceTree = "<group>"; };
 		7B11CB431BAE906200E15E74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B11CB4C1BAE90A800E15E74 /* Teacher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
-		7B11CB4E1BAE912100E15E74 /* JSONModel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSONModel.xcodeproj; path = ../JSONModel/JSONModel.xcodeproj; sourceTree = "<group>"; };
 		7B11CB561BAE91DB00E15E74 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		7BB94FE51BB2A9840054C439 /* SwiftJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftJSON.xcodeproj; path = ../SwiftJSON.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +78,7 @@
 		7B11CB201BAE906200E15E74 = {
 			isa = PBXGroup;
 			children = (
-				7B11CB4E1BAE912100E15E74 /* JSONModel.xcodeproj */,
+				7BB94FE51BB2A9840054C439 /* SwiftJSON.xcodeproj */,
 				7B11CB2B1BAE906200E15E74 /* Examples */,
 				7B11CB401BAE906200E15E74 /* ExamplesUITests */,
 				7B11CB2A1BAE906200E15E74 /* Products */,
@@ -118,10 +118,10 @@
 			path = ExamplesUITests;
 			sourceTree = "<group>";
 		};
-		7B11CB4F1BAE912100E15E74 /* Products */ = {
+		7BB94FE61BB2A9840054C439 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7B11CB531BAE912100E15E74 /* JSONModel.framework */,
+				7BB94FEA1BB2A9850054C439 /* SwiftJSON.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,7 +140,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				7B11CB551BAE912A00E15E74 /* PBXTargetDependency */,
+				7BB94FEC1BB2A9980054C439 /* PBXTargetDependency */,
 			);
 			name = Examples;
 			productName = Examples;
@@ -196,8 +196,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 7B11CB4F1BAE912100E15E74 /* Products */;
-					ProjectRef = 7B11CB4E1BAE912100E15E74 /* JSONModel.xcodeproj */;
+					ProductGroup = 7BB94FE61BB2A9840054C439 /* Products */;
+					ProjectRef = 7BB94FE51BB2A9840054C439 /* SwiftJSON.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -209,11 +209,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		7B11CB531BAE912100E15E74 /* JSONModel.framework */ = {
+		7BB94FEA1BB2A9850054C439 /* SwiftJSON.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = JSONModel.framework;
-			remoteRef = 7B11CB521BAE912100E15E74 /* PBXContainerItemProxy */;
+			path = SwiftJSON.framework;
+			remoteRef = 7BB94FE91BB2A9850054C439 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -266,10 +266,10 @@
 			target = 7B11CB281BAE906200E15E74 /* Examples */;
 			targetProxy = 7B11CB3E1BAE906200E15E74 /* PBXContainerItemProxy */;
 		};
-		7B11CB551BAE912A00E15E74 /* PBXTargetDependency */ = {
+		7BB94FEC1BB2A9980054C439 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = JSONModel;
-			targetProxy = 7B11CB541BAE912A00E15E74 /* PBXContainerItemProxy */;
+			name = SwiftJSON;
+			targetProxy = 7BB94FEB1BB2A9980054C439 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

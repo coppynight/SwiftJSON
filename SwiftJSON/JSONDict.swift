@@ -166,7 +166,7 @@ public func write<T>(inout dict:JSONDict, key: String, value:[T]) {
             nums.append(NSNumber(value: v)!)
         }
     } else {
-        print("unsupported type", value.dynamicType)
+        print("[ERROR] unsupported type", value.dynamicType)
     }
 }
 

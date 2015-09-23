@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import JSONModel
+import SwiftJSON
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
